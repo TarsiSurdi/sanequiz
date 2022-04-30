@@ -13,6 +13,7 @@ const GlobalStyle = createGlobalStyle`
 
   html {
     background-color: black;
+    overflow: hidden;
   }
 
   body {
@@ -20,7 +21,6 @@ const GlobalStyle = createGlobalStyle`
     height: 100vh;
     margin: 0;
     background-color: black;
-    overflow-y: hidden;
   }
 
   div#root {
