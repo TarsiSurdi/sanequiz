@@ -11,16 +11,16 @@ const GlobalStyle = createGlobalStyle`
     font-family: Arial, Helvetica, sans-serif;
   }
 
+  html {
+    background-color: black;
+  }
+
   body {
     width: 100vw;
     height: 100vh;
 
     margin: 0;
-    background-color: black;
-  }
-
-  div#root {
-    background: #333;
+    background-color: #333;
   }
 
   div#root, div.App {
