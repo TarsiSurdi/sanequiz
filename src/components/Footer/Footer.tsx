@@ -16,6 +16,7 @@ export default styled(Footer)`
   justify-content: center;
 
   width: 100%;
+  min-height: fit-content;
 
   position: fixed;
   bottom: 0;

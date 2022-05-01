@@ -5,5 +5,5 @@ export default styled.main`
   flex-direction: column;
   align-items: center;
 
-  height: max-content;
+  flex: 1;
 `;

@@ -23,8 +23,8 @@ export default styled(Deck)`
 
   margin-top: 50px;
 
-  width: 300px;
-  height: 400px;
+  width: 80%;
+  height: 90%;
 
   background-color: #2a2a2a;
   border-radius: 20px;

@@ -3,6 +3,7 @@ import { theme } from "../../globalStyle";
 
 export default styled.h1`
   margin: 0;
+  padding-top: 0.25em;
 
   font-family: Bokor, cursive;
   font-size: 32pt;

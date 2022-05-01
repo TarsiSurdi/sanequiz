@@ -18,7 +18,7 @@ const Paragraph: React.FC<{ className?: string }> = ({ className }) => {
 
 export default styled(Paragraph)`
   span {
-    margin-right: 0.3em;
+    margin-right: 0.5em;
   }
 
   padding: 0.5em;

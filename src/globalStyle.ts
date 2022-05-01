@@ -13,7 +13,7 @@ const GlobalStyle = createGlobalStyle`
 
   html {
     background-color: black;
-    overflow: hidden;
+    /* overflow: hidden; */
   }
 
   body {
@@ -24,11 +24,14 @@ const GlobalStyle = createGlobalStyle`
   }
 
   div#root {
+    width: 100%;
+    height: 100%;
     background-color: #333;
   }
+  div.App {
+    display: flex;
+    flex-direction: column;
 
-  div#root, div.App {
-    width: 100%;
     height: 100%;
   }
 `;
