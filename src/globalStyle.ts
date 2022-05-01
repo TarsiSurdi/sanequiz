@@ -13,20 +13,16 @@ const GlobalStyle = createGlobalStyle`
 
   html {
     background-color: black;
-    width: 100vw;
-    height: calc(100vh - env(safe-area-inset-bottom));
-    /* overflow: hidden; */
+    height: stretch;
   }
 
   body {
-    width: 100vw;
-    height: 100vh;
+    height: 100%;
     margin: 0;
     background-color: black;
   }
 
   div#root {
-    width: 100%;
     height: 100%;
     background-color: #333;
   }
