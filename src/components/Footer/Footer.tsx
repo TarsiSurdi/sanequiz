@@ -18,8 +18,5 @@ export default styled(Footer)`
   width: 100%;
   min-height: fit-content;
 
-  position: fixed;
-  bottom: 0;
-
   background-color: rgba(0, 0, 0, 0.5);
 `;

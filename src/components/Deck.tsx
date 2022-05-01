@@ -21,8 +21,6 @@ export default styled(Deck)`
   align-items: center;
   justify-content: center;
 
-  margin-top: 50px;
-
   width: 80%;
   height: 90%;
 
