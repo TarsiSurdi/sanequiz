@@ -13,6 +13,8 @@ const GlobalStyle = createGlobalStyle`
 
   html {
     background-color: black;
+    width: 100vw;
+    height: calc(100vh - env(safe-area-inset-bottom));
     /* overflow: hidden; */
   }
 
@@ -32,7 +34,7 @@ const GlobalStyle = createGlobalStyle`
     display: flex;
     flex-direction: column;
 
-    height: calc(100% - env(safe-area-inset-bottom));
+    height: 100%;
   }
 `;
 
