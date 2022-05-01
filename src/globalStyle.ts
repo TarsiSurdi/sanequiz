@@ -13,11 +13,17 @@ const GlobalStyle = createGlobalStyle`
 
   html {
     background-color: black;
-    height: stretch;
+
+    height: 100vh;
   }
 
   body {
-    height: 100%;
+    height: 100%; /* Fallback */
+    height: -moz-available;
+    height: -webkit-fill-available;
+    height: fill-available;
+    height: stretch; /* Latest specification */
+
     margin: 0;
     background-color: black;
   }
