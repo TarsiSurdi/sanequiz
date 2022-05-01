@@ -32,7 +32,7 @@ const GlobalStyle = createGlobalStyle`
     display: flex;
     flex-direction: column;
 
-    height: 100%;
+    height: calc(100% - env(safe-area-inset-bottom));
   }
 `;
 
