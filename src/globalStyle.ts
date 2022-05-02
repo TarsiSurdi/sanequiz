@@ -23,6 +23,7 @@ const GlobalStyle = createGlobalStyle`
     height: -webkit-fill-available;
     height: fill-available;
     height: stretch; /* Latest specification */
+    height: 100vh;
 
     margin: 0;
     background-color: black;
