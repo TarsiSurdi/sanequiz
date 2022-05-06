@@ -26,4 +26,5 @@ export default styled(Paragraph)`
   color: hotpink;
   font-weight: bold;
   text-align: center;
+  font-family: sans-serif;
 `;

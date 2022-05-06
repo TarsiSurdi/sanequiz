@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import styled from "styled-components";
 import { animated, useSpring } from "react-spring";
 import { useDrag } from "@use-gesture/react";
@@ -23,9 +24,29 @@ const StyledCard = styled(animated.div)`
 `;
 
 const Deck = () => {
+  const [text, setText] = useState("Card Text");
   const [springProps, api] = useSpring(() => ({ x: 0, y: 0, rotateZ: 0 }));
 
-  const bind = useDrag(({ down, movement: [mx, my] }) => {
+  useEffect(() => {
+    const timeoutId = setTimeout(() => {
+      setText("Card Text");
+    }, 1250);
+    return () => {
+      clearTimeout(timeoutId);
+    };
+  }, [text]);
+
+  const bind = useDrag(({ down, movement: [mx], velocity: [vx, vy] }) => {
+    const swipe = vx > 0.3;
+
+    if (swipe) {
+      if (mx > 50) {
+        setText("Swipe Right");
+      } else {
+        setText("Swipe Left");
+      }
+    }
+
     api.start({
       x: down ? mx : 0,
       rotateZ: down ? mx * 0.3 : 0,
@@ -35,7 +56,7 @@ const Deck = () => {
 
   return (
     <StyledCard {...bind()} style={{ ...springProps }}>
-      <p>Card Text</p>
+      <p>{text}</p>
     </StyledCard>
   );
 };
