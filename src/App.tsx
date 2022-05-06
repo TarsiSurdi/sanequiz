@@ -4,7 +4,7 @@ import HeaderTitle from "./components/Header/HeaderTitle";
 import GameWrapper from "./components/GameWrapper";
 import DeckWrapper from "./components/DeckWrapper";
 
-import Deck from "./components/Deck";
+import Card from "./components/Deck";
 import Controls from "./components/Controls";
 
 import Footer from "./components/Footer/Footer";
@@ -17,7 +17,7 @@ function App() {
       </Header>
       <GameWrapper>
         <DeckWrapper>
-          <Deck />
+          <Card />
         </DeckWrapper>
         <Controls />
       </GameWrapper>

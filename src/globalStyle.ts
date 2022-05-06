@@ -8,24 +8,16 @@ const GlobalStyle = createGlobalStyle`
   * {
     margin: 0;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
   }
 
-  html {
+  html, body {
     background-color: black;
 
-    height: 100vh;
+    width: 100%;
+    height: 100%;
   }
 
   body {
-    height: 100%; /* Fallback */
-    height: -moz-available;
-    height: -webkit-fill-available;
-    height: fill-available;
-    height: stretch; /* Latest specification */
-    height: 100vh;
-
-    margin: 0;
     background-color: black;
   }
 
