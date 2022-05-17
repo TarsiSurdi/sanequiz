@@ -16,7 +16,6 @@ const cards = [
 
 const Wrapper = styled.div`
   margin: 20px;
-  border-radius: 10px;
 
   width: 75%;
   height: 90%;
@@ -24,7 +23,7 @@ const Wrapper = styled.div`
   max-width: 450px;
   max-height: 600px;
 
-  background-color: #fff;
+  border: 1px dashed white;
 
   display: grid;
   grid-template: 1fr / 1fr;
