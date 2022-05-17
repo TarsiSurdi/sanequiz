@@ -1,9 +1,14 @@
 import { useState } from "react";
 import styled from "styled-components";
-import { animated, to as interpolate, useSprings } from "react-spring";
+import {
+  animated,
+  to as interpolate,
+  useSpring,
+  useSprings,
+} from "react-spring";
 import { useDrag } from "@use-gesture/react";
 
-import styles from "./styles.module.css";
+import styles from "./styles.module.scss";
 
 const cards = [
   "https://upload.wikimedia.org/wikipedia/commons/f/f5/RWS_Tarot_08_Strength.jpg",
@@ -23,8 +28,6 @@ const Wrapper = styled.div`
   max-width: 450px;
   max-height: 600px;
 
-  border: 1px dashed white;
-
   display: grid;
   grid-template: 1fr / 1fr;
 `;
@@ -41,16 +44,29 @@ const from = (_i: number) => ({ x: 0, rot: 0, scale: 1.5, y: -1000 });
 
 // This is being used down there in the view, it interpolates rotation and scale into a css transform
 const trans = (r: number, s: number) =>
-  `perspective(1500px) rotateX(10deg) rotateY(${
-    r / 10
-  }deg) rotateZ(${r}deg) scale(${s})`;
+  `perspective(1500px) 
+   rotateX(10deg) 
+   
+   rotateZ(${r}deg) 
+   scale(${s})`;
+
+// old - trans: rotateY(${r / 10}deg)
 
 const Deck = () => {
   const [gone] = useState(() => new Set()); // The set flags all the cards that are flicked out
+  const [flipped, setFlipped] = useState(false);
+
   const [props, api] = useSprings(cards.length, (i) => ({
     ...to(i),
     from: from(i),
   })); // Create a bunch of springs using the helpers above
+
+  // tarsi - Create springs for flipping
+  const { transform } = useSpring({
+    transform: `rotateY(${flipped ? 180 : 0}deg)`,
+    config: { mass: 5, tension: 300, friction: 80 },
+  });
+
   // Create a gesture, we're interested in down-state, delta (current-pos - click-pos), direction and velocity
   const bind = useDrag(
     ({
@@ -92,24 +108,45 @@ const Deck = () => {
           key={i}
           style={{ x, y }}
           onClick={() => {
-            console.log(`Card ${i} was clicked!`);
+            setFlipped((prevState) => !prevState);
           }}
         >
           {/* This is the card itself, we're binding our gesture to it (and inject its index so we know which is which) */}
           <animated.div
             {...bind(i)}
             style={{
-              transform: interpolate([rot, scale], trans),
-              backgroundImage: `url(${cards[i]})`,
+              backfaceVisibility: "hidden",
+              transform: interpolate(
+                [rot, scale, transform],
+                (r, s, t) => `${t} 
+                perspective(1500px)
+                rotateZ(${r}deg) 
+                rotateX(10deg)  
+                scale(${s})`
+              ),
             }}
-          />
+          >
+            <p>Frente</p>
+          </animated.div>
+
           <animated.div
             {...bind(i)}
             style={{
-              transform: interpolate([rot, scale], trans),
-              backgroundImage: `url(${cards[i]})`,
+              backfaceVisibility: "hidden",
+              transform: interpolate(
+                [rot, scale, transform],
+                (r, s, t) => `
+                perspective(1500px) 
+                ${t} 
+                rotateY(180deg) 
+                rotateX(10deg) 
+                rotateZ(${r}deg)
+                scale(${s})`
+              ),
             }}
-          />
+          >
+            <p>Verso</p>
+          </animated.div>
         </animated.div>
       ))}
     </Wrapper>
@@ -117,3 +154,6 @@ const Deck = () => {
 };
 
 export default Deck;
+
+// transform: interpolate([rot, scale], trans),
+// backgroundImage: `url(${cards[i]})`,

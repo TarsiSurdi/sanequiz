@@ -1,0 +1,36 @@
+.deck {
+  grid-area: 1 / 1;
+
+  width: 100%;
+  height: 100%;
+  will-change: transform;
+
+  display: grid;
+  grid-template: 1fr / 1fr;
+  justify-items: center;
+  align-items: center;
+
+  > div {
+    grid-area: 1 / 1;
+
+    touch-action: none;
+    background-color: white;
+    background-size: auto 85%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 45vh;
+    max-width: 300px;
+    height: 85vh;
+    max-height: 570px;
+    will-change: transform;
+    border-radius: 10px;
+    box-shadow: 0 12.5px 100px -10px rgba(50, 50, 73, 0.4),
+      0 10px 10px -10px rgba(50, 50, 73, 0.3);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Germania One";
+    font-size: 24pt;
+  }
+}
