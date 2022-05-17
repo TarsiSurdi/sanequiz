@@ -36,7 +36,9 @@ const to = (i: number) => ({
   rot: -10 + Math.random() * 20,
   delay: i * 100,
 });
+
 const from = (_i: number) => ({ x: 0, rot: 0, scale: 1.5, y: -1000 });
+
 // This is being used down there in the view, it interpolates rotation and scale into a css transform
 const trans = (r: number, s: number) =>
   `perspective(1500px) rotateX(10deg) rotateY(${
@@ -85,8 +87,22 @@ const Deck = () => {
   return (
     <Wrapper>
       {props.map(({ x, y, rot, scale }, i) => (
-        <animated.div className={styles.deck} key={i} style={{ x, y }}>
+        <animated.div
+          className={styles.deck}
+          key={i}
+          style={{ x, y }}
+          onClick={() => {
+            console.log(`Card ${i} was clicked!`);
+          }}
+        >
           {/* This is the card itself, we're binding our gesture to it (and inject its index so we know which is which) */}
+          <animated.div
+            {...bind(i)}
+            style={{
+              transform: interpolate([rot, scale], trans),
+              backgroundImage: `url(${cards[i]})`,
+            }}
+          />
           <animated.div
             {...bind(i)}
             style={{
