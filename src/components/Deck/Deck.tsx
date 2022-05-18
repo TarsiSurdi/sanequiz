@@ -7,6 +7,8 @@ const useGesture = createUseGesture([dragAction]);
 
 import styles from "./styles.module.scss";
 
+import background from "../../assets/card.svg";
+
 const cards = [
   "https://upload.wikimedia.org/wikipedia/commons/f/f5/RWS_Tarot_08_Strength.jpg",
   "https://upload.wikimedia.org/wikipedia/commons/5/53/RWS_Tarot_16_Tower.jpg",
@@ -111,7 +113,7 @@ const Deck = () => {
                 rotateZ(${r}deg) 
                 scale(${s})`
               ),
-              transformStyle: "preserve-3d",
+              backgroundImage: `url(${background})`,
             }}
           >
             <p>Frente</p>
@@ -130,7 +132,7 @@ const Deck = () => {
                 rotateZ(${r}deg) 
                 scale(${s})`
               ),
-              transformStyle: "preserve-3d",
+              backgroundImage: `url(${background})`,
             }}
           >
             <p>Verso</p>
