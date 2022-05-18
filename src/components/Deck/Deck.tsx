@@ -79,18 +79,7 @@ const Deck = () => {
           api.start((i) => to(i));
         }, 600);
     },
-    onMouseDown: () => {
-      setCancel(false);
-
-      setTimeout(() => {
-        setCancel(true);
-      }, 250);
-    },
-    onMouseUp: ({ args: [index] }) => {
-      console.log(`Mouse up ran: ${cancel}`);
-      if (cancel) {
-        return;
-      }
+    onDoubleClick: ({ args: [index] }) => {
       setFlipped((prevState) => {
         prevState[index] = !prevState[index];
         return prevState;
