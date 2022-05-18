@@ -1,0 +1,652 @@
+[
+  {
+    "pergunta": "Decúbito usado para carnívoros, roedores e suínos",
+    "resposta": "Dorsal"
+  },
+  {
+    "pergunta": "Decúbito usado para ruminantes",
+    "resposta": "Lateral esquerdo"
+  },
+  { "pergunta": "Decúbito usado para equinos", "resposta": "Lateral direito" },
+  {
+    "pergunta": "Deve ser avaliada ao furar o diafragma",
+    "resposta": "Pressão negativa"
+  },
+  {
+    "pergunta": "Propósito do seccionamento do osso hióide",
+    "resposta": "Liberar língua para avaliação do esôfago e traquéia"
+  },
+  {
+    "pergunta": "Como se faz a avaliação do sistema nervoso?",
+    "resposta": "Retirar musculatura, abrir crânio e avaliar encéfalo"
+  },
+  {
+    "pergunta": "Como faz a avaliação da cavidade abdominal?",
+    "resposta": "Retirar omento e baço, cortar duodeno e porção final do intestino, fígado (vesícula), abomaso, sistema urinário e rim"
+  },
+  {
+    "pergunta": "Avaliação do coração",
+    "resposta": "Avaliar consistência e presença de líquido no pericárdio"
+  },
+  {
+    "pergunta": "Volume ideal de formol para acondicionamento de amostra",
+    "resposta": "10 vezes mais que amostra"
+  },
+  {
+    "pergunta": "Dados necessários para identificação de material",
+    "resposta": "Proprietário, remetente, espécie, idade, sexo, raça, endereço para envio de laudo…"
+  },
+  {
+    "pergunta": "Concentração de formol para amostras de encéfalo",
+    "resposta": "Formol a 20%"
+  },
+  {
+    "pergunta": "Tempo que o material deve ficar no formol para elaboração de lâmina",
+    "resposta": "48 horas"
+  },
+  {
+    "pergunta": "Consequências da agressão celular",
+    "resposta": "Alteração da síntese proteica, erros mitóticos e produção de substâncias errôneas"
+  },
+  {
+    "pergunta": "Resposta dos tecidos à agressão",
+    "resposta": "Adaptação ou degeneração > volta à normalidade ou necrose"
+  },
+  {
+    "pergunta": "Maneiras em que ocorre a adaptação celular",
+    "resposta": "Atrofia, hipertrofia ou hiperplasia"
+  },
+  {
+    "pergunta": "Causam o desequilíbrio da homeostasia - adaptação celular",
+    "resposta": "Desequilíbrio hídrico, falta de ATP, tumefação e alterações morfológicas e funcionais"
+  },
+  {
+    "pergunta": "Tipos de degeneração celular",
+    "resposta": "Hidrópica e gordurosa"
+  },
+  {
+    "pergunta": "Degeneração hidrópica, mecanismo",
+    "resposta": "Acúmulo intracelular de água decorrente da perda da seletividade da membrana celular"
+  },
+  {
+    "pergunta": "Degeneração gordurosa, mecanismo",
+    "resposta": "Acúmulo intracelular de gordura"
+  },
+  {
+    "pergunta": "Degeneração gordurosa, órgãos comumente acometidos",
+    "resposta": "Fígado e miocárdio"
+  },
+  {
+    "pergunta": "Degeneração gordurosa, causas",
+    "resposta": "Oxidação de ácidos graxos diminuída, síntese excessiva de triglicerídeos; falha na formação de lipoproteína; excesso de ácidos graxos no fígado"
+  },
+  {
+    "pergunta": "",
+    "resposta": "Degeneração hidrópica",
+    "imagem": "1"
+  },
+  { "pergunta": "", "resposta": "Degeneração gordurosa", "imagem": "2" },
+  {
+    "pergunta": "Acúmulos intracelulares, substâncias",
+    "resposta": "Proteínas, formando gotas hialinas e inclusões",
+    "comentario": "Glicogênio, hemoglobina…"
+  },
+  {
+    "pergunta": "Acúmulos extracelulares, tipos",
+    "resposta": "Fendas de colesterol, amiloidose e gota"
+  },
+  { "pergunta": "Necrose, definição", "resposta": "Morte celular patológica" },
+  {
+    "pergunta": "Apoptose, definição",
+    "resposta": "Morte celular fisiológica"
+  },
+  {
+    "pergunta": "Gangrena, definição",
+    "resposta": "Infecção bacteriana de tecido necrosado"
+  },
+  {
+    "pergunta": "Apoptose patológica, ocorrência",
+    "resposta": "Tumores, atrofias patológicas e com produtos tóxicos"
+  },
+  {
+    "pergunta": "Alterações presentes em tecido necrosado",
+    "resposta": "Lise enzimática e coagulação proteica"
+  },
+  {
+    "pergunta": "Morte celular sem perda de arquitetura",
+    "resposta": "Necrose de coagulação"
+  },
+  { "pergunta": "Necrose ocorre em animais mortos?", "resposta": "Não" },
+  {
+    "pergunta": "Lesão friável de coloração clara com comprometimento vascular e presença de zona de demarcação",
+    "resposta": "Necrose"
+  },
+  {
+    "pergunta": "Aspecto microscópico do tecido necrosado",
+    "resposta": "Eosinofilia, cariólise / cariorrexe / picnose"
+  },
+  { "pergunta": "Picnose, definição", "resposta": "Núcleo pequeno" },
+  { "pergunta": "Cariorrexe, definição", "resposta": "Núcleo fragmentado" },
+  { "pergunta": "Cariólise, definição", "resposta": "Núcleo ausente" },
+  {
+    "pergunta": "Mecanismos da necrose",
+    "resposta": "Digestão enzimática, coagulação das proteínas e desnaturação",
+    "comentario": "Autólise / heterólise; massa eosinofílica"
+  },
+  {
+    "pergunta": "Tipos de necrose",
+    "resposta": "Coagulação, liquefação, caseosa, gordurosa e gangrena"
+  },
+  {
+    "pergunta": "Consequências da necrose",
+    "resposta": "Substituição por tecido fibroso; lise total; formação de cavidades císticas; precipitação de sais de cálcio; formação de abcessos / gangrena"
+  },
+  { "pergunta": "", "resposta": "Necrose de coagulação", "imagem": "3" },
+  { "pergunta": "", "resposta": "Necrose gordurosa", "imagem": "4" },
+  { "pergunta": "", "resposta": "Necrose caseosa", "imagem": "5" },
+  {
+    "pergunta": "Necrose de coagulação, causas",
+    "resposta": "Infarto, deficiência de suprimento sanguíneo",
+    "comentario": "Hipóxia e anóxia"
+  },
+  {
+    "pergunta": "Alteração nuclear predominante na necrose de coagulação",
+    "resposta": "Cariólise"
+  },
+  {
+    "pergunta": "Necrose de coagulação, mecanismo",
+    "resposta": "Desnaturação das proteínas e enzimas proteolíticas; perda de água;"
+  },
+  {
+    "pergunta": "Necrose de liquefação, mecanismo",
+    "resposta": "Liquefação ou dissolução dos tecidos pelas enzimas",
+    "comentario": "Autodigestão"
+  },
+  {
+    "pergunta": "Tipo de necrose exclusivo ao sistema nervoso central",
+    "resposta": "Malácia (liquefação)",
+    "comentario": "Ocorre após isquemia; autólise"
+  },
+  {
+    "pergunta": "Necrose de liquefação, macroscopia",
+    "resposta": "Área deprimida de aspecto gelatinoso; formações císticas; cápsula"
+  },
+  {
+    "pergunta": "Necrose de liquefação, microscopia",
+    "resposta": "Perda da arquitetura; vacúolos; restos celulares; intenso infiltrado inflamatório;"
+  },
+  {
+    "pergunta": "Abscesso, definição",
+    "resposta": "Cápsula formada ao redor de uma necrose de liquefação",
+    "comentario": "Decorrente de heterólise"
+  },
+  {
+    "pergunta": "Necrose caseosa, onde ocorre",
+    "resposta": "Granulomas infecciosos",
+    "comentario": "Exemplo: tuberculose"
+  },
+  {
+    "pergunta": "Reação do organismo frente à bactérias resistentes à fagocitose",
+    "resposta": "Necrose caseosa"
+  },
+  {
+    "pergunta": "Há presença de células gigantes nos bordos desse tipo de lesão (junção de macrófagos)",
+    "resposta": "Necrose caseosa"
+  },
+  {
+    "pergunta": "Necrose caseosa, aspecto",
+    "resposta": "Requeijão 🧀; sensação de “cortar areia” na necropsia"
+  },
+  {
+    "pergunta": "Necrose gordurosa, macroscopia",
+    "resposta": "Nodulações rígidas, branco-amareladas, aspecto de giz (gordura + sais de cálcio)"
+  },
+  {
+    "pergunta": "Necrose de gordura, causas",
+    "resposta": "Ação hidrolítica da lipase pancreática, pressão ou trauma mecânico",
+    "comentario": "Lesão do ducto pancreático"
+  },
+  {
+    "pergunta": "Requisitos para gangrena",
+    "resposta": "Necrose + putrefação"
+  },
+  { "pergunta": "Tipos de gangrena", "resposta": "Seca, úmida e gasosa" },
+  {
+    "pergunta": "Gangrena gasosa, causas",
+    "resposta": "Proliferação de bactérias produtoras de gás (anaeróbias) no tecido necrótico",
+    "comentario": "Clostridiose - carbúnculo sintomático"
+  },
+  {
+    "pergunta": "Gangrena úmida, definição",
+    "resposta": "Mescla de coagulação e necrose de liquefação"
+  },
+  {
+    "pergunta": "Gangrena seca, causa",
+    "resposta": "Infecção necrótica por bactérias saprófitas",
+    "comentario": "Comum em extremidades"
+  },
+  {
+    "pergunta": "Distúrbios dos pigmentos (exógenos)",
+    "resposta": "Antracose (pulmão), carotenose e tetraciclina"
+  },
+  {
+    "pergunta": "Distúrbios: melanina",
+    "resposta": "Albinismo, despigmentação nasal e melanoma"
+  },
+  {
+    "pergunta": "Icterícia, definição",
+    "resposta": "Acúmulo de bilirrubinas na circulação sanguínea"
+  },
+  {
+    "pergunta": "Distúrbios: hemoglobina",
+    "resposta": "Hemossiderose e rabdomiólise (intoxicação por ionóforo)"
+  },
+  {
+    "pergunta": "Litíase / cálculo, causa",
+    "resposta": "Processo de mineralização"
+  },
+  { "pergunta": "Concreção, definição", "resposta": "Material endurecido" },
+  {
+    "pergunta": "Litíases e concreções, consequências",
+    "resposta": "Obstrução, lesão e infecção de ductos"
+  },
+  {
+    "pergunta": "Formação de litíases, causas",
+    "resposta": "Alteração do estado coloidal de líquidos; descamação epitelial; células inflamatórias e grumos bacterianos"
+  },
+  {
+    "pergunta": "Condições para a formação de uma urolitíase",
+    "resposta": "Presença de matriz orgânica e pH alterado e concentração da urina"
+  },
+  {
+    "pergunta": "Tipos de bezoários",
+    "resposta": "Piloconcrementos, fitoconcrementos e fecalomas"
+  },
+  { "pergunta": "Concreção, sinônimo", "resposta": "Bezoário" },
+  { "pergunta": "Concreção, sufixo", "resposta": "“ólito”" },
+  {
+    "pergunta": "Calcificação, mecanismo",
+    "resposta": "Ocorre pela deposição de cálcio em tecidos conjuntivos não ósseos"
+  },
+  {
+    "pergunta": "Calcificação distrófica, mecanismo",
+    "resposta": "Deposição de cálcio em tecidos lesados ou morte celular",
+    "comentario": "Localizada, independe da concentração sérica de cálcio"
+  },
+  {
+    "pergunta": "Calcificação metastática, características",
+    "resposta": "Distribuída, secundária à hipercalcemia"
+  },
+  {
+    "pergunta": "Principal órgão em que se observa edema",
+    "resposta": "Pulmão"
+  },
+  {
+    "pergunta": "Edema, mecanismo",
+    "resposta": "Aumento da pressão hidrostática e diminuição da osmótica"
+  },
+  { "pergunta": "Edema na bolsa escrotal", "resposta": "Hidrocele" },
+  { "pergunta": "Edema das trompas uterinas", "resposta": "Hidrossalpinge" },
+  {
+    "pergunta": "Congestão (hiperemia), definição",
+    "resposta": "Maior concentração de sangue na luz dos vasos"
+  },
+  {
+    "pergunta": "",
+    "resposta": "Petéquias",
+    "comentario": "Hemorragias puntiformes",
+    "imagem": "6"
+  },
+  { "pergunta": "", "resposta": "Equimose", "imagem": "7" },
+  { "pergunta": "", "resposta": "Sufusão", "imagem": "8" },
+  {
+    "pergunta": "Causas de hemorragia",
+    "resposta": "Trauma, envenenamento, hepatopatia e trombocitopenia secundária à CID",
+    "comentario": "Coagulação intravascular disseminada"
+  },
+  {
+    "pergunta": "Infarto, definição",
+    "resposta": "Morte celular por isquemia - ausência de sangue",
+    "comentario": "Necrose de coagulação"
+  },
+  {
+    "pergunta": "Êmbolo, definição",
+    "resposta": "Corpo estranho livre na corrente sanguínea",
+    "comentario": "Causa infarto"
+  },
+  {
+    "pergunta": "Trombo, definição",
+    "resposta": "Coágulo sanguíneo aderido à parede vascular"
+  },
+  {
+    "pergunta": "Tríade de Rudolf Virchow",
+    "resposta": "Lesão no endotélio, fluxo vascular e coagulação",
+    "comentario": "Levam à formação de trombos"
+  },
+  {
+    "pergunta": "Fatores que interferem na decomposição do cadáver",
+    "resposta": "Temperatura, tamanho do animal, estado nutricional, causa da morte…"
+  },
+  { "pergunta": "Órgão que sofre autólise muito rápido", "resposta": "Rim" },
+  {
+    "pergunta": "Hipostase cadavérica, definição",
+    "resposta": "Acúmulo de sangue ao lado do decúbito (gravidade)",
+    "comentario": "Altercação abiótica"
+  },
+  {
+    "pergunta": "Rigor mortis",
+    "resposta": "Enrijecimento muscular",
+    "comentario": "Alteração cadavérica abiótica"
+  },
+  {
+    "pergunta": "Embebição biliar, definição",
+    "resposta": "Extravasamento de bile, deixando regiões esverdeadas",
+    "comentario": "Alteração cadavérica abiótica"
+  },
+  {
+    "pergunta": "Timpanismo post mortem, definição",
+    "resposta": "Acúmulo de gás abdominal decorrente da fermentação intestinal",
+    "comentario": "Alteração cadavérica abiótica"
+  },
+  {
+    "pergunta": "Alterações cadavéricas abióticas",
+    "resposta": "Hipostase, rigor muscular, coagulação, embebição biliar, impregnação por hemoglobina, timpanismo, deslocamento e ruptura visceral, pseudo prolapso retal e autólise"
+  },
+  {
+    "pergunta": "Alterações cadavéricas transformativas",
+    "resposta": "Heterólise, pseudomelanose, enfisema cadavérico tecidual e maceração"
+  },
+  {
+    "pergunta": "Hemartrose",
+    "resposta": "Acúmulo de sangue nas articulações"
+  },
+  { "pergunta": "Metrorragia", "resposta": "Hemorragia uterina" },
+  { "pergunta": "Melena, conceito", "resposta": "Sangue nas fezes" },
+  { "pergunta": "Epistaxe", "resposta": "Hemorragia nasal" },
+  {
+    "pergunta": "Inflamação aguda, definição",
+    "resposta": "Resposta vascular e celular aguda frente a uma injúria"
+  },
+  {
+    "pergunta": "Processos realizados pelos leucócitos durante a inflamação aguda",
+    "resposta": "Adesão, quimiotaxia e emigração"
+  },
+  {
+    "pergunta": "Alterações vasculares da inflamação aguda",
+    "resposta": "Alteração no calibre dos vasos sanguíneos e maior permeabilidade vascular"
+  },
+  {
+    "pergunta": "Sinais cardinais da inflamação aguda",
+    "resposta": "Dor, calor, perda de função, edema e rubor"
+  },
+  {
+    "pergunta": "Causa a liberação do ácido araquidônico",
+    "resposta": "Ruptura de membranas celulares"
+  },
+  {
+    "pergunta": "Principais células envolvidas na inflamação aguda",
+    "resposta": "Fibroblastos, leucócitos e neutrófilos"
+  },
+  {
+    "pergunta": "Processo pelo qual há entrada de neutrófilos na corrente sanguínea",
+    "resposta": "Diapedese"
+  },
+  {
+    "pergunta": "Causa da dor na inflamação aguda",
+    "resposta": "Compressão de terminações nervosas"
+  },
+  {
+    "pergunta": "Anticoagulantes secretados durante a inflamação",
+    "resposta": "Histamina e heparina"
+  },
+  { "pergunta": "Substância a qual estimula a dor", "resposta": "Bradicinina" },
+  {
+    "pergunta": "Há maior presença desta célula no início de uma resposta inflamatória",
+    "resposta": "Neutrófilos",
+    "comentario": "Substituído por outras células com o decorrer do tempo"
+  },
+  {
+    "pergunta": "Responsável pela formação de pus bacteriano ou fúngico",
+    "resposta": "Neutrófilo"
+  },
+  {
+    "pergunta": "Presente em reações alérgicas e parasitoses",
+    "resposta": "Eosinófilos"
+  },
+  {
+    "pergunta": "Localização de mastócito e basófilos",
+    "resposta": "Tecido subcutâneo e mucosas"
+  },
+  {
+    "pergunta": "Não fazem fagocitose, produzem mediadores inflamatórios e substâncias vasoativas",
+    "resposta": "Mastócito e Basófilo"
+  },
+  {
+    "pergunta": "Células indicativas de um processo inflamatório crônico",
+    "resposta": "Macrófagos e monócitos",
+    "comentario": "Macrófago é o mais importante!"
+  },
+  {
+    "pergunta": "Função principal dos linfócitos de tipo B",
+    "resposta": "Imunidade humoral",
+    "comentario": "Produção de anticorpos, resposta crônica"
+  },
+  {
+    "pergunta": "Função principal de linfócitos tipo T",
+    "resposta": "Imunidade medidas por células",
+    "comentario": "Geralmente presentes em inflamações agudas"
+  },
+  {
+    "pergunta": "Podem se concentrar antes das demais células em infecções virais",
+    "resposta": "Linfócitos T",
+    "comentario": "Células killer, resposta aguda"
+  },
+  {
+    "pergunta": "Célula também atraída por receptores de membrana",
+    "resposta": "Linfócito T"
+  },
+  {
+    "pergunta": "Tipos de distribuição",
+    "resposta": "Focal, multifocal, coalescente, focalmente extensa e difusa"
+  },
+  {
+    "pergunta": "Graus de severidade",
+    "resposta": "Discreto, moderado e acentuado"
+  },
+  {
+    "pergunta": "Líquido claro, rico em proteínas, derivado do soro com células de revestimento epitelial",
+    "resposta": "Exsudato seroso",
+    "comentario": "Ocorre em caso de edema, picada de inseto, infecções virais e queimaduras de segundo grau"
+  },
+  {
+    "pergunta": "Composto por muco e células descamadas em membranas mucosas",
+    "resposta": "Exsudato catarral",
+    "comentario": "Causado por agentes bacterianos ou virais (estágios iniciais) e irritantes químicos"
+  },
+  {
+    "pergunta": "Evolução do exsudato catarral",
+    "resposta": "Catarro-purulenta",
+    "comentario": "Presença de restos celulares, neutrófilos, fibrina e hemácias"
+  },
+  {
+    "pergunta": "Possui abundante quantidade de neutrófilos, restos celulares e pus",
+    "resposta": "Exsudato purulento ou supurativo",
+    "comentario": "Ocorre em inflamações violentas com elevado dano tecidual (enzimas lisossomais), pode levar à septicemia"
+  },
+  {
+    "pergunta": "Composição exsudato supurativo",
+    "resposta": "Neutrófilos, sangue e fibrina",
+    "comentario": "Agudo"
+  },
+  {
+    "pergunta": "Composição exsudato purulento subagudo",
+    "resposta": "Diminui-se o nível de neutrófilos, surgem monócitos e tecido conjuntivo"
+  },
+  {
+    "pergunta": "Pústula, localização",
+    "resposta": "Epiderme",
+    "comentario": "Cavidade"
+  },
+  { "pergunta": "Cavidade pré formada", "resposta": "Empiema" },
+  {
+    "pergunta": "Flegmão, localização",
+    "resposta": "Tecidos frouxos",
+    "comentario": "Cavidade; tecido subcutâneo, intermuscular e submucoso"
+  },
+  {
+    "pergunta": "Nomenclatura, cavidade revestida por tecido conjuntivo com pus liquefeito em seu interior",
+    "resposta": "Abscesso",
+    "comentario": "Cavidades"
+  },
+  {
+    "pergunta": "Presente em lesões vasculares; altas concentrações de fibrina; em mucosas ou serosas",
+    "resposta": "Exsudato fibrinoso"
+  },
+  {
+    "pergunta": "Tipos de exsudato fibrinoso",
+    "resposta": "Difteróide e pseudo difteróide",
+    "comentario": "Adere a superfícies necrosadas, altera o tecido quando removido; adere a células sadias, não altera o tecido quando removido, respectivamente"
+  },
+  {
+    "pergunta": "Mistura de hemácias em exsudatos serosos, fibrinosos ou purulentos",
+    "resposta": "Exsudato hemorrágico",
+    "comentario": "Ocorre rapidamente, em geral é grave"
+  },
+  {
+    "pergunta": "Ocorre quando há invasão bacteriana em tecido necrótico e nos exsudatos",
+    "resposta": "Exsudato gangrenoso",
+    "comentario": "Diferencia-se em gangrena seca, úmida e gasosa"
+  },
+  {
+    "pergunta": "Idiopático, definição",
+    "resposta": "Causa ou mecanismo não identificado"
+  },
+  {
+    "pergunta": "Mediadores inflamatórios",
+    "resposta": "Citocinas, histamina, heparina, fatores vasodilatadores, sistema complemento e bradicininas"
+  },
+  {
+    "pergunta": "Características da inflamação crônica",
+    "resposta": "Duração prolongada, inflamação aguda não elimina estímulo (repetidas vezes)",
+    "comentario": "Além de uma resposta bioquímica única ou fatores de virulência presentes nos microrganismos incitantes"
+  },
+  {
+    "pergunta": "Mecanismos biológicos que provocam a inflamação crônica",
+    "resposta": "Persistência / resistência; isolamento; não responsividade; autoimunidade e mecanismos idiopáticos"
+  },
+  {
+    "pergunta": "Aspectos benéficos da inflamação crônica",
+    "resposta": "Isolamento ou remoção do agente, podem não provocar dor ou perda de função"
+  },
+  {
+    "pergunta": "Aspectos danosos da inflamação crônica",
+    "resposta": "Deslocamento ou substituição do tecido adjacente; obstrução; proliferação de novos vasos; granulomas"
+  },
+  {
+    "pergunta": "",
+    "resposta": "Splendore Hoeppli",
+    "comentario": "Interação antígeno anticorpo na progressão da inflamação aguda",
+    "imagem": "9"
+  },
+  {
+    "pergunta": "Espécies em que não há formação de pus nos abcessos",
+    "resposta": "Aves e répteis"
+  },
+  {
+    "pergunta": "Condições para cicatrização por primeira intenção",
+    "resposta": "Bordas diretamente apostas e ferida limpa (não séptica)"
+  },
+  {
+    "pergunta": "Condições para cicatrização por segunda intenção",
+    "resposta": "Ausência de aposição de bordas, ferida extensa, suja ou infeccionada"
+  },
+  {
+    "pergunta": "Proto-oncogenes, definição",
+    "resposta": "Genes responsáveis pelo controle do crescimento e multiplicação celular"
+  },
+  {
+    "pergunta": "Neoplasia, definição",
+    "resposta": "Lesão no genoma celular que leva à formação de um neoplasma",
+    "comentario": "Causas: erros mitóticos, radiação solar, vírus, toxinas…\nLesão nos proto-oncogenes"
+  },
+  {
+    "pergunta": "Neoplasma, definição",
+    "resposta": "Lesão neoplásica propriamente dita; crescimento desordenado"
+  },
+  {
+    "pergunta": "Tumor, definição",
+    "resposta": "Qualquer aumento de volume, independente da causa"
+  },
+  { "pergunta": "Câncer, definição", "resposta": "Neoplasia maligna" },
+  {
+    "pergunta": "Componentes de uma neoplasia",
+    "resposta": "Parênquima e estroma",
+    "comentario": "Células tumorais proliferantes e tecido de sustentação, respectivamente"
+  },
+  {
+    "pergunta": "Possibilitam a classificação de neoplasias",
+    "resposta": "Histogênese e comportamento biológico"
+  },
+  {
+    "pergunta": "Tipos de células importantes para a diferenciação de neoplasias",
+    "resposta": "Epiteliais, mesenquimais, melanócitos e neuroectodermais"
+  },
+  {
+    "pergunta": "Nomenclatura para neoplasias sobre tecido epitelial",
+    "resposta": "Tecido de origem + sufixo “oma”; caso glandular adiciona-se adeno; caso maligno - carcinoma"
+  },
+  {
+    "pergunta": "Nomenclatura para neoplasias sobre tecido mesenquimal",
+    "resposta": "Nome do tecido + sufixo “oma”; caso maligno: sarcoma"
+  },
+  {
+    "pergunta": "Nomenclatura para neoplasias sobre músculos lisos",
+    "resposta": "Leiomioma e leiomiossarcoma"
+  },
+  {
+    "pergunta": "Nomenclatura para neoplasias sobre músculos estriados",
+    "resposta": "Rabdomioma ou rabdomiossarcoma"
+  },
+  {
+    "pergunta": "Nomenclatura para neoplasias sobre vasos sanguíneos",
+    "resposta": "Hemangioma ou hemangiossarcoma"
+  },
+  {
+    "pergunta": "Exceções à regra da nomenclatura de neoplasias",
+    "resposta": "Linfoma, melanoma e mastocitoma",
+    "comentario": "Melanocitoma - benigno"
+  },
+  {
+    "pergunta": "Neoplasia exclusiva aos ovários",
+    "resposta": "Teratoma (benigno)",
+    "comentario": "Sem folheto embrionário de origem específico"
+  },
+  {
+    "pergunta": "Local de comum ocorrência de tumores mistos",
+    "resposta": "Glândulas mamárias"
+  },
+  {
+    "pergunta": "Nomenclatura para tumor misto maligno",
+    "resposta": "Carcinossarcoma"
+  },
+  {
+    "pergunta": "Classificação de neoplasias microscopicamente bem diferenciadas",
+    "resposta": "Benigno"
+  },
+  {
+    "pergunta": "Classificação de neoplasias microscopicamente pouco diferenciadas",
+    "resposta": "Maligno"
+  },
+  {
+    "pergunta": "Tipos de neoplasias, macroscopia",
+    "resposta": "Endotífico e exotífico"
+  },
+  {
+    "pergunta": "Vias de disseminação de neoplasias",
+    "resposta": "Hematógena, linfática e transcelômica"
+  },
+  {
+    "pergunta": "Consequências dos tumores",
+    "resposta": "Caquexia, anemia e hipercalcemia, PTH (carcinoma renal) e choque anafilático (mastocitoma)"
+  }
+]
