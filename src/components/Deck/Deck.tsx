@@ -1,12 +1,9 @@
 import { useState, useEffect } from "react";
 import styled from "styled-components";
-import {
-  animated,
-  to as interpolate,
-  useSpring,
-  useSprings,
-} from "react-spring";
-import { useDrag, useGesture } from "@use-gesture/react";
+import { animated, to as interpolate, useSprings } from "react-spring";
+import { createUseGesture, dragAction } from "@use-gesture/react";
+
+const useGesture = createUseGesture([dragAction]);
 
 import styles from "./styles.module.scss";
 
@@ -45,18 +42,12 @@ const from = (i: number) => ({ x: 0, rot: 0, scale: 0, y: 0, rotateY: 0 });
 const Deck = () => {
   const [gone] = useState(() => new Set()); // The set flags all the cards that are flicked out
   const [isFlipped, setFlipped] = useState(new Array(cards.length).fill(false));
+  const [cancel, setCancel] = useState(false);
 
   const [props, api] = useSprings(cards.length, (i) => ({
     to: { ...to(i), rotateY: isFlipped[i] ? 180 : 0 },
     from: from(i),
   }));
-
-  console.log(props);
-
-  // const [rotateSprings] = useSprings(cards.length, (i) => ({
-  //   ,
-  //   config: { mass: 5, tension: 300, friction: 80 },
-  // }));
 
   const bind = useGesture({
     onDrag: ({
@@ -88,8 +79,18 @@ const Deck = () => {
           api.start((i) => to(i));
         }, 600);
     },
-    onClick: ({ args: [index] }) => {
-      console.log(index);
+    onMouseDown: () => {
+      setCancel(false);
+
+      setTimeout(() => {
+        setCancel(true);
+      }, 250);
+    },
+    onMouseUp: ({ args: [index] }) => {
+      console.log(`Mouse up ran: ${cancel}`);
+      if (cancel) {
+        return;
+      }
       setFlipped((prevState) => {
         prevState[index] = !prevState[index];
         return prevState;
@@ -105,7 +106,6 @@ const Deck = () => {
     <Wrapper>
       {props.map(({ x, y, rot, scale, rotateY }, i) => (
         <animated.div className={styles.deck} key={i} style={{ x, y }}>
-          {/* This is the card itself, we're binding our gesture to it (and inject its index so we know which is which) */}
           <animated.div
             {...bind(i)}
             style={{
@@ -150,6 +150,3 @@ const Deck = () => {
 };
 
 export default Deck;
-
-// transform: interpolate([rot, scale], trans),
-// backgroundImage: `url(${cards[i]})`,
