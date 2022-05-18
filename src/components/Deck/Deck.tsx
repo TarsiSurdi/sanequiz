@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import styled from "styled-components";
 import { animated, to as interpolate, useSprings } from "react-spring";
 import { createUseGesture, dragAction } from "@use-gesture/react";
@@ -40,9 +40,8 @@ const to = (i: number) => ({
 const from = (i: number) => ({ x: 0, rot: 0, scale: 0, y: 0, rotateY: 0 });
 
 const Deck = () => {
-  const [gone] = useState(() => new Set()); // The set flags all the cards that are flicked out
+  const [gone] = useState(() => new Set());
   const [isFlipped, setFlipped] = useState(new Array(cards.length).fill(false));
-  const [cancel, setCancel] = useState(false);
 
   const [props, api] = useSprings(cards.length, (i) => ({
     to: { ...to(i), rotateY: isFlipped[i] ? 180 : 0 },
@@ -84,10 +83,14 @@ const Deck = () => {
         prevState[index] = !prevState[index];
         return prevState;
       });
-      api.start((i) => {
-        if (index !== i) return;
-        return { rotateY: isFlipped[i] ? 0 : 180 };
-      });
+
+      setTimeout(() => {
+        api.start((i) => {
+          if (index !== i) return;
+          const rotation = { rotateY: isFlipped[i] ? 180 : 0 };
+          return rotation;
+        });
+      }, 100);
     },
   });
 
