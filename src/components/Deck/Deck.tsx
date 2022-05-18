@@ -17,7 +17,7 @@ const cards = [
 ];
 
 const Wrapper = styled.div`
-  margin: 20px;
+  margin-top: 20px;
 
   width: 75%;
   height: 90%;
