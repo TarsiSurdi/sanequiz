@@ -8,6 +8,7 @@ const GlobalStyle = createGlobalStyle`
   * {
     margin: 0;
     padding: 0;
+    user-select: none;
   }
 
   html, body {
@@ -15,6 +16,9 @@ const GlobalStyle = createGlobalStyle`
 
     width: 100%;
     height: 100%;
+
+    overflow: hidden;
+    overscroll-behavior: contain;
   }
 
   body {

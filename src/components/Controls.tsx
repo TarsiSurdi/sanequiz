@@ -28,6 +28,8 @@ const Controls: React.FC<{ className?: string }> = ({ className }) => {
 };
 
 export default styled(Controls)`
+  padding: 2rem;
+
   flex: 2;
   display: flex;
 
