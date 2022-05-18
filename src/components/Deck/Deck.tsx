@@ -69,11 +69,24 @@ const Deck = () => {
           config: { friction: 50, tension: active ? 800 : isGone ? 200 : 500 },
         };
       });
-      if (!active && gone.size === cards.length)
+      if (!active && gone.size === cards.length) {
+        let isFlippedAnimation = new Array(cards.length).fill(false);
+        setFlipped(isFlippedAnimation);
         setTimeout(() => {
+          console.log(isFlipped);
           gone.clear();
-          api.start((i) => to(i));
+          api.start((i) => {
+            return {
+              x: 0,
+              y: i * -4,
+              scale: 1,
+              rot: -10 + Math.random() * 20,
+              rotateY: isFlippedAnimation[i] ? 180 : 0,
+              delay: i * 100,
+            };
+          });
         }, 600);
+      }
     },
     onDoubleClick: ({ args: [index] }) => {
       setFlipped((prevState) => {
@@ -87,7 +100,7 @@ const Deck = () => {
           const rotation = { rotateY: isFlipped[i] ? 180 : 0 };
           return rotation;
         });
-      }, 100);
+      }, 50);
     },
   });
 
