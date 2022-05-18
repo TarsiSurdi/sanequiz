@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import styled from "styled-components";
 import {
   animated,
@@ -6,7 +6,7 @@ import {
   useSpring,
   useSprings,
 } from "react-spring";
-import { useDrag } from "@use-gesture/react";
+import { useDrag, useGesture } from "@use-gesture/react";
 
 import styles from "./styles.module.scss";
 
@@ -40,36 +40,26 @@ const to = (i: number) => ({
   delay: i * 100,
 });
 
-const from = (_i: number) => ({ x: 0, rot: 0, scale: 1.5, y: -1000 });
-
-// This is being used down there in the view, it interpolates rotation and scale into a css transform
-const trans = (r: number, s: number) =>
-  `perspective(1500px) 
-   rotateX(10deg) 
-   
-   rotateZ(${r}deg) 
-   scale(${s})`;
-
-// old - trans: rotateY(${r / 10}deg)
+const from = (i: number) => ({ x: 0, rot: 0, scale: 0, y: 0, rotateY: 0 });
 
 const Deck = () => {
   const [gone] = useState(() => new Set()); // The set flags all the cards that are flicked out
-  const [flipped, setFlipped] = useState(false);
+  const [isFlipped, setFlipped] = useState(new Array(cards.length).fill(false));
 
   const [props, api] = useSprings(cards.length, (i) => ({
-    ...to(i),
+    to: { ...to(i), rotateY: isFlipped[i] ? 180 : 0 },
     from: from(i),
-  })); // Create a bunch of springs using the helpers above
+  }));
 
-  // tarsi - Create springs for flipping
-  const { transform } = useSpring({
-    transform: `rotateY(${flipped ? 180 : 0}deg)`,
-    config: { mass: 5, tension: 300, friction: 80 },
-  });
+  console.log(props);
 
-  // Create a gesture, we're interested in down-state, delta (current-pos - click-pos), direction and velocity
-  const bind = useDrag(
-    ({
+  // const [rotateSprings] = useSprings(cards.length, (i) => ({
+  //   ,
+  //   config: { mass: 5, tension: 300, friction: 80 },
+  // }));
+
+  const bind = useGesture({
+    onDrag: ({
       args: [index],
       active,
       movement: [mx],
@@ -97,33 +87,39 @@ const Deck = () => {
           gone.clear();
           api.start((i) => to(i));
         }, 600);
-    }
-  );
+    },
+    onClick: ({ args: [index] }) => {
+      console.log(index);
+      setFlipped((prevState) => {
+        prevState[index] = !prevState[index];
+        return prevState;
+      });
+      api.start((i) => {
+        if (index !== i) return;
+        return { rotateY: isFlipped[i] ? 0 : 180 };
+      });
+    },
+  });
 
   return (
     <Wrapper>
-      {props.map(({ x, y, rot, scale }, i) => (
-        <animated.div
-          className={styles.deck}
-          key={i}
-          style={{ x, y }}
-          onClick={() => {
-            setFlipped((prevState) => !prevState);
-          }}
-        >
+      {props.map(({ x, y, rot, scale, rotateY }, i) => (
+        <animated.div className={styles.deck} key={i} style={{ x, y }}>
           {/* This is the card itself, we're binding our gesture to it (and inject its index so we know which is which) */}
           <animated.div
             {...bind(i)}
             style={{
               backfaceVisibility: "hidden",
               transform: interpolate(
-                [rot, scale, transform],
-                (r, s, t) => `${t} 
+                [rot, scale, rotateY],
+                (r, s, t) => `
                 perspective(1500px)
+                rotateX(10deg)
+                rotateY(${t}deg)   
                 rotateZ(${r}deg) 
-                rotateX(10deg)  
                 scale(${s})`
               ),
+              transformStyle: "preserve-3d",
             }}
           >
             <p>Frente</p>
@@ -134,15 +130,15 @@ const Deck = () => {
             style={{
               backfaceVisibility: "hidden",
               transform: interpolate(
-                [rot, scale, transform],
+                [rot, scale, rotateY],
                 (r, s, t) => `
-                perspective(1500px) 
-                ${t} 
-                rotateY(180deg) 
-                rotateX(10deg) 
-                rotateZ(${r}deg)
+                perspective(1500px)
+                rotateX(10deg)
+                rotateY(${t - 180}deg)   
+                rotateZ(${r}deg) 
                 scale(${s})`
               ),
+              transformStyle: "preserve-3d",
             }}
           >
             <p>Verso</p>
