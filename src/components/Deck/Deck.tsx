@@ -19,13 +19,8 @@ const cards = [
 ];
 
 const Wrapper = styled.div`
-  margin-top: 20px;
-
-  width: 75%;
-  height: 90%;
-
-  max-width: 450px;
-  max-height: 600px;
+  width: 80%;
+  height: 80%;
 
   display: grid;
   grid-template: 1fr / 1fr;

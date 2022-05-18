@@ -16,7 +16,7 @@ function App() {
       </Header>
       <GameWrapper>
         <Deck />
-        <Controls />
+        {/* <Controls /> */}
       </GameWrapper>
       <Footer />
     </div>
