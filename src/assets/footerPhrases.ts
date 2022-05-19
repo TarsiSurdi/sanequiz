@@ -40,6 +40,10 @@ const phrases: Array<Phrase> = [
     icon: "📝",
     text: "Revisão por Isadora Vanz Schwaiga",
   },
+  {
+    icon: "🔓",
+    text: "Este é um projeto de código aberto!",
+  },
 ];
 
 export default phrases;
