@@ -19,7 +19,7 @@ function App() {
           style={{ position: "absolute", top: "0", right: "0" }}
           onClick={() => {
             alert(
-              "Este jogo possui mais de 180 perguntas em forma de carta sobre conceitos diversos da área da Patologia Geral.\nJogue-o como quiser: sozinho, competindo com amigos... Use sua criatividade!\nInstruções: deslize as cartas para a esquerda ou direita para removê-la do topo do deck; um duplo toque sobre a carta faz com que ela vire, revelando a resposta; 5 cartas são geradas aleatoriamente por vez."
+              "Este jogo possui mais de 180 perguntas em forma de carta sobre conceitos diversos da área da Patologia Geral.\n\nJogue-o como quiser: sozinho, competindo com amigos... Use sua criatividade!\n\nInstruções: deslize as cartas para a esquerda ou direita para removê-las do topo do deck; um duplo toque sobre a carta faz com que ela vire, revelando a resposta; 5 cartas são geradas aleatoriamente por vez."
             );
           }}
         />
