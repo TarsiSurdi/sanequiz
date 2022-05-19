@@ -3,20 +3,15 @@ import styled from "styled-components";
 import { animated, to as interpolate, useSprings } from "react-spring";
 import { createUseGesture, dragAction } from "@use-gesture/react";
 
-const useGesture = createUseGesture([dragAction]);
+import { getRandomIntInclusive } from "../../helperFunctions";
 
 import styles from "./styles.module.scss";
 
+// Assets
 import background from "../../assets/card.svg";
+import cardData from "../../assets/cardData.json";
 
-const cards = [
-  "https://upload.wikimedia.org/wikipedia/commons/f/f5/RWS_Tarot_08_Strength.jpg",
-  "https://upload.wikimedia.org/wikipedia/commons/5/53/RWS_Tarot_16_Tower.jpg",
-  "https://upload.wikimedia.org/wikipedia/commons/9/9b/RWS_Tarot_07_Chariot.jpg",
-  "https://upload.wikimedia.org/wikipedia/commons/3/3a/TheLovers.jpg",
-  "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/RWS_Tarot_02_High_Priestess.jpg/690px-RWS_Tarot_02_High_Priestess.jpg",
-  "https://upload.wikimedia.org/wikipedia/commons/d/de/RWS_Tarot_01_Magician.jpg",
-];
+const useGesture = createUseGesture([dragAction]);
 
 const Wrapper = styled.div`
   width: 80%;
@@ -36,8 +31,26 @@ const to = (i: number) => ({
 
 const from = (i: number) => ({ x: 0, rot: 0, scale: 0, y: 0, rotateY: 0 });
 
+interface cardDataI {
+  pergunta: string;
+  resposta: string;
+  comentario?: string;
+  imagem?: string;
+}
+
+const getRandomCard = (): cardDataI => {
+  return cardData[getRandomIntInclusive(0, cardData.length)];
+};
+
 const Deck = () => {
   const [gone] = useState(() => new Set());
+  const [cards, setCards] = useState<cardDataI[]>([
+    getRandomCard(),
+    getRandomCard(),
+    getRandomCard(),
+    getRandomCard(),
+    getRandomCard(),
+  ]);
   const [isFlipped, setFlipped] = useState(new Array(cards.length).fill(false));
 
   const [props, api] = useSprings(cards.length, (i) => ({
@@ -72,6 +85,12 @@ const Deck = () => {
       if (!active && gone.size === cards.length) {
         let isFlippedAnimation = new Array(cards.length).fill(false);
         setFlipped(isFlippedAnimation);
+        setCards((prevState) => {
+          for (let i = 0; i < prevState.length; i++) {
+            prevState[i] = getRandomCard();
+          }
+          return prevState;
+        });
         setTimeout(() => {
           console.log(isFlipped);
           gone.clear();
@@ -124,7 +143,8 @@ const Deck = () => {
               backgroundImage: `url(${background})`,
             }}
           >
-            <p>Frente</p>
+            <h4>Pergunta</h4>
+            <p>{cards[i].pergunta}</p>
           </animated.div>
 
           <animated.div
@@ -143,7 +163,8 @@ const Deck = () => {
               backgroundImage: `url(${background})`,
             }}
           >
-            <p>Verso</p>
+            <h4>Resposta</h4>
+            <p>{cards[i].resposta}</p>
           </animated.div>
         </animated.div>
       ))}
