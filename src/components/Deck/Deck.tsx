@@ -144,8 +144,11 @@ const Deck = () => {
             }}
           >
             <div>
-              <h4>Pergunta</h4>
-              <h3>{cards[i].pergunta}</h3>
+              {cards[i].imagem ? <h4>Descreva:</h4> : <h4>Pergunta</h4>}
+              {cards[i].pergunta && <h3>{cards[i].pergunta}</h3>}
+              {cards[i].imagem && (
+                <img src={`/src/assets/images/${cards[i].imagem}.jpg`}></img>
+              )}
             </div>
           </animated.div>
 
