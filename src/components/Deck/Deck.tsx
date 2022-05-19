@@ -143,8 +143,10 @@ const Deck = () => {
               backgroundImage: `url(${background})`,
             }}
           >
-            <h4>Pergunta</h4>
-            <p>{cards[i].pergunta}</p>
+            <div>
+              <h4>Pergunta</h4>
+              <p>{cards[i].pergunta}</p>
+            </div>
           </animated.div>
 
           <animated.div
@@ -163,8 +165,10 @@ const Deck = () => {
               backgroundImage: `url(${background})`,
             }}
           >
-            <h4>Resposta</h4>
-            <p>{cards[i].resposta}</p>
+            <div>
+              <h4>Resposta</h4>
+              <p>{cards[i].resposta}</p>
+            </div>
           </animated.div>
         </animated.div>
       ))}
