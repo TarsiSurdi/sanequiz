@@ -14,10 +14,10 @@ import cardData from "../../assets/cardData.json";
 const useGesture = createUseGesture([dragAction]);
 
 const Wrapper = styled.div`
+  grid-area: 2 / 1;
+
   width: 100%;
   height: 100%;
-
-  margin: 20px 0;
 
   display: grid;
   grid-template: 1fr / 1fr;
