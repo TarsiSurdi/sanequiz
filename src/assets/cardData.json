@@ -83,9 +83,13 @@
   {
     "pergunta": "",
     "resposta": "Degeneração hidrópica",
-    "imagem": "1"
+    "imagem": "https://i.imgur.com/tjLx1Gc.png"
   },
-  { "pergunta": "", "resposta": "Degeneração gordurosa", "imagem": "2" },
+  {
+    "pergunta": "",
+    "resposta": "Degeneração gordurosa",
+    "imagem": "https://i.imgur.com/tnyj4al.png"
+  },
   {
     "pergunta": "Acúmulos intracelulares, substâncias",
     "resposta": "Proteínas, formando gotas hialinas e inclusões",
@@ -141,9 +145,21 @@
     "pergunta": "Consequências da necrose",
     "resposta": "Substituição por tecido fibroso; lise total; formação de cavidades císticas; precipitação de sais de cálcio; formação de abcessos / gangrena"
   },
-  { "pergunta": "", "resposta": "Necrose de coagulação", "imagem": "3" },
-  { "pergunta": "", "resposta": "Necrose gordurosa", "imagem": "4" },
-  { "pergunta": "", "resposta": "Necrose caseosa", "imagem": "5" },
+  {
+    "pergunta": "",
+    "resposta": "Necrose de coagulação",
+    "imagem": "https://i.imgur.com/Tj0IwPO.png"
+  },
+  {
+    "pergunta": "",
+    "resposta": "Necrose gordurosa",
+    "imagem": "https://i.imgur.com/rNZoUZA.png"
+  },
+  {
+    "pergunta": "",
+    "resposta": "Necrose caseosa",
+    "imagem": "https://i.imgur.com/ruwIm8f.png"
+  },
   {
     "pergunta": "Necrose de coagulação, causas",
     "resposta": "Infarto, deficiência de suprimento sanguíneo",
@@ -295,10 +311,18 @@
     "pergunta": "",
     "resposta": "Petéquias",
     "comentario": "Hemorragias puntiformes",
-    "imagem": "6"
+    "imagem": "https://i.imgur.com/BU5oY5I.png"
   },
-  { "pergunta": "", "resposta": "Equimose", "imagem": "7" },
-  { "pergunta": "", "resposta": "Sufusão", "imagem": "8" },
+  {
+    "pergunta": "",
+    "resposta": "Equimose",
+    "imagem": "https://i.imgur.com/6tvA7Pt.png"
+  },
+  {
+    "pergunta": "",
+    "resposta": "Sufusão",
+    "imagem": "https://i.imgur.com/MutZUXY.png"
+  },
   {
     "pergunta": "Causas de hemorragia",
     "resposta": "Trauma, envenenamento, hepatopatia e trombocitopenia secundária à CID",
@@ -546,7 +570,7 @@
     "pergunta": "",
     "resposta": "Splendore Hoeppli",
     "comentario": "Interação antígeno anticorpo na progressão da inflamação aguda",
-    "imagem": "9"
+    "imagem": "https://i.imgur.com/sT3tlDP.png"
   },
   {
     "pergunta": "Espécies em que não há formação de pus nos abcessos",

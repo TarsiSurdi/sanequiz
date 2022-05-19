@@ -14,8 +14,7 @@ import cardData from "../../assets/cardData.json";
 const useGesture = createUseGesture([dragAction]);
 
 const Wrapper = styled.div`
-  width: 80%;
-  height: 80%;
+  height: 80vh;
 
   display: grid;
   grid-template: 1fr / 1fr;
@@ -146,9 +145,7 @@ const Deck = () => {
             <div>
               {cards[i].imagem ? <h4>Descreva:</h4> : <h4>Pergunta</h4>}
               {cards[i].pergunta && <h3>{cards[i].pergunta}</h3>}
-              {cards[i].imagem && (
-                <img src={`/src/assets/images/${cards[i].imagem}.jpg`}></img>
-              )}
+              {cards[i].imagem && <img src={cards[i].imagem}></img>}
             </div>
           </animated.div>
 
