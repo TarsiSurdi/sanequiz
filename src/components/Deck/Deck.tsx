@@ -93,7 +93,6 @@ const Deck = () => {
           return prevState;
         });
         setTimeout(() => {
-          console.log(isFlipped);
           gone.clear();
           api.start((i) => {
             return {
