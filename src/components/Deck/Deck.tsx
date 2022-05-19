@@ -145,7 +145,7 @@ const Deck = () => {
           >
             <div>
               <h4>Pergunta</h4>
-              <p>{cards[i].pergunta}</p>
+              <h3>{cards[i].pergunta}</h3>
             </div>
           </animated.div>
 
@@ -167,7 +167,8 @@ const Deck = () => {
           >
             <div>
               <h4>Resposta</h4>
-              <p>{cards[i].resposta}</p>
+              <h3>{cards[i].resposta}</h3>
+              {cards[i].comentario && <p>{cards[i].comentario}</p>}
             </div>
           </animated.div>
         </animated.div>
