@@ -16,7 +16,7 @@ function App() {
         <HelpCircle
           color="gray"
           size={24}
-          style={{ position: "absolute", top: "5", right: "5"}}
+          style={{ position: "absolute", top: "5px", right: "5px" }}
           onClick={() => {
             alert(
               "Este jogo possui mais de 180 perguntas em forma de carta sobre conceitos diversos da área da Patologia Geral.\n\nJogue-o como quiser: sozinho, competindo com amigos... Use sua criatividade!\n\nInstruções: deslize as cartas para a esquerda ou direita para removê-las do topo do deck; um duplo toque sobre a carta faz com que ela vire, revelando a resposta; 5 cartas são geradas aleatoriamente por vez."
