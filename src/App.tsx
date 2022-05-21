@@ -7,8 +7,13 @@ import Deck from "./components/Deck/Deck";
 import Footer from "./components/Footer/Footer";
 
 import { HelpCircle } from "react-feather";
+import { useEffect } from "react";
 
 function App() {
+  useEffect(() => {
+    screen.orientation.lock("portrait");
+  }, []);
+
   return (
     <div className="App">
       <Header>
