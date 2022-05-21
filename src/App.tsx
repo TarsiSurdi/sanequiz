@@ -11,7 +11,9 @@ import { useEffect } from "react";
 
 function App() {
   useEffect(() => {
-    screen.orientation.lock("portrait");
+    if (screen) {
+      screen.orientation.lock("portrait");
+    }
   }, []);
 
   return (
