@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import styled from "styled-components";
 
 import { getRandomIntInclusive } from "../../helperFunctions";
@@ -8,6 +8,17 @@ const Paragraph: React.FC<{ className?: string }> = ({ className }) => {
   const [chosenPhrase, setChosenPhrase] = useState(
     phrases[getRandomIntInclusive(0, phrases.length - 1)]
   );
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      setChosenPhrase(phrases[getRandomIntInclusive(0, phrases.length - 1)]);
+    }, 10000);
+
+    return () => {
+      clearInterval(intervalId);
+    };
+  }, []);
+
   return (
     <p className={className}>
       <span>{chosenPhrase.icon}</span>
