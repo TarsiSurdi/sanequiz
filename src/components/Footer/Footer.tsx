@@ -11,6 +11,8 @@ const Footer: React.FC<{ className?: string }> = ({ className }) => {
 };
 
 export default styled(Footer)`
+  padding-bottom: env(safe-area-inset-bottom);
+
   display: flex;
   align-items: center;
   justify-content: center;

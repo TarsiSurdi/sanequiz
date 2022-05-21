@@ -33,7 +33,6 @@ export default styled(Paragraph)`
   }
 
   padding: 0.5em;
-  padding-bottom: calc(1em + env(safe-area-inset-bottom));
 
   color: hotpink;
   font-weight: bold;
