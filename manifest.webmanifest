@@ -1,7 +1,9 @@
 {
+  "$schema": "https://raw.githubusercontent.com/SchemaStore/schemastore/master/src/schemas/json/web-manifest.json",
   "background_color": "black",
   "description": "Jogo sobre Patologia Geral baseado em flipcards",
   "display": "standalone",
+  "orientation": "portrait",
   "icons": [
     {
       "src": "/src/assets/icons/Icon-36.png",
