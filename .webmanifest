@@ -1,0 +1,18 @@
+{
+  "background_color": "black",
+  "description": "Jogo sobre Patologia Geral baseado em flipcards",
+  "display": "fullscreen",
+  "icons": [
+    {
+      "36": "/src/assets/icons/Icon-36.png",
+      "48": "/src/assets/icons/Icon-48.png",
+      "72": "/src/assets/icons/Icon-72.png",
+      "96": "/src/assets/icons/Icon-96.png",
+      "144": "/src/assets/icons/Icon-144.png",
+      "192": "/src/assets/icons/Icon-192.png",
+      "512": "/src/assets/icons/Icon-512.png"
+    }
+  ],
+  "name": "Patognomônico",
+  "start_url": "/index.html"
+}
