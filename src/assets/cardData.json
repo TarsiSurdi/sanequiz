@@ -1,7 +1,195 @@
 [
   {
-    "pergunta": "tarsilindoegay para carnívoros, roedores e suínos",
-    "resposta": "Dorsal"
+    "pergunta": "O que é saneamento básico?",
+    "resposta": "É o controle sobre todos os fatores que podem prejudicar a saúde física, mental e social"
+  },
+  {
+    "pergunta": "O que é saneamento ambiental?",
+    "resposta": "São medidas do saneamento básico que visam também preservar o meio ambiente"
+  },
+  {
+    "pergunta": "Quais são os 4 pilares do saneamento?",
+    "resposta": "Abastecimento de água, esgotamento sanitário, drenagem e manejo de resíduos"
+  },
+  {
+    "pergunta": "Qual a região com mais perdas no sistema de distribuição de água do Brasil?",
+    "resposta": "Região Norte, com 51,2% de perdas"
+  },
+  {
+    "pergunta": "Quais os principais métodos para estudo populacional?",
+    "resposta": "Projeção aritmética e projeção geométrica"
+  },
+  {
+    "pergunta": "Quais os principais fatores de complexidade em um estudo populacional?",
+    "resposta": "Medicina, migração, guerras, tecnologia, política e pandemias"
+  },
+  {
+    "pergunta": "Quais variáveis fazem parte do cálculo da vazão de projeto?",
+    "resposta": "População, consumo per capita e coeficientes de variação da vazão"
+  },
+  {
+    "pergunta": "Quais as principais etapas do sistema de distribuição de água?",
+    "resposta": "Captação, ETA, reservatório e rede de distribuição"
+  },
+  {
+    "pergunta": "Como é a função de crescimento populacional na projeção aritmética?",
+    "resposta": "Uma função linear"
+  },
+  {
+    "pergunta": "Como é a função de crescimento populacional na projeção geométrica?",
+    "resposta": "Uma função exponencial"
+  },
+  {
+    "pergunta": "Quais os tipos de mananciais para captação de água?",
+    "resposta": "Superficial, subterrâneo, águas pluviais ou de reuso"
+  },
+  {
+    "pergunta": "No Brasil há mais mananciais superficiais ou subterrâneos?",
+    "resposta": "No Brasil há mais mananciais superficiais"
+  },
+  {
+    "pergunta": "Quais os maiores aquíferos do Brasil?",
+    "resposta": "Sistema aquífero Grande Amazônia e Guarani"
+  },
+  {
+    "pergunta": "Quais as vantagens da captação subterrânea?",
+    "resposta": "Qualidade, relativamente fácil obtenção e possibilidade de implantação próximo a área de consumo"
+  },
+  {
+    "pergunta": "Quais as partes de um sistema de adução por recalque?",
+    "resposta": "Bombas, poços de sucção e tubulação de sucção e recalque"
+  },
+  {
+    "pergunta": "Qual o principal critério no dimensionamento de uma linha de adução por recalque?",
+    "resposta": "Critério econômico"
+  },
+  {
+    "pergunta": "O que é diâmetro econômico?",
+    "resposta": "É aquele que fornece uma velocidade de escoamento em torno de 0,90 m/s"
+  },
+  {
+    "pergunta": "Quais os principais parâmetros na escolha do tratamento de água?",
+    "resposta": "Turbidez e presença de algas"
+  },
+  {
+    "pergunta": "Quais as principais finalidades da Calha Parshall?",
+    "resposta": "Medidor de vazão e câmara de mistura rápida"
+  },
+  {
+    "pergunta": "Quais as partes que compõem uma Calha Parshall?",
+    "resposta": "Seção convergente, estrangulada (garganta) e divergente"
+  },
+  {
+    "pergunta": "Quais os tipos de câmara de mistura rápida?",
+    "resposta": "Hidráulica e mecânica"
+  },
+  {
+    "pergunta": "Como funciona a câmara de mistura rápida hidráulica?",
+    "resposta": "Através do fenômeno chamado ressalto hidráulico"
+  },
+  {
+    "pergunta": "Nas câmaras de mistura rápida, quais os gradientes máximo e mínimo?",
+    "resposta": "Máximo = 700 e Mínimo = 100"
+  },
+  {
+    "pergunta": "Qual o melhor tipo de mecanismo para uma câmara de mistura mecânica?",
+    "resposta": "Agitadores do tipo turbina."
+  },
+  {
+    "pergunta": "O que é coagulação?",
+    "resposta": "Processo que desestabiliza as impurezas, juntando-as em grupos maiores"
+  },
+  {
+    "pergunta": "O que é floculação?",
+    "resposta": "Agitação da mistura para formação de flocos"
+  },
+  {
+    "pergunta": "O que é decantação?",
+    "resposta": "Passagem da água por tanques onde as partículas se depositam por ação da gravidade."
+  },
+  {
+    "pergunta": "Quais os parâmetros de projeto de um decantador?",
+    "resposta": "TAS de 20 a 60; Altura de 3 a 5 metros; Tempo de 1,5 a 3 horas"
+  },
+  {
+    "pergunta": "Para que serve a fluoretação?",
+    "resposta": "Combater a cárie na população, principalmente infantil"
+  },
+  {
+    "pergunta": "Quais são os 5R da economia circular e saneamento?",
+    "resposta": "Recusar, Refletir, Reduzir, Reutilizar e Reciclar"
+  },
+  {
+    "pergunta": "O sistema de abastecimento de água é constituido por?",
+    "resposta": "Captação, adução de água bruta, ETA, adução de água tratada, reservatório e rede de distribuição"
+  },
+  {
+    "pergunta": "Qual a região do Brasil que tem o maior consumo per-capita de água?",
+    "resposta": "Sudeste"
+  },
+  {
+    "pergunta": "Qual a região do Brasil que tem o menor consumo per-capita de água?",
+    "resposta": "Nordeste"
+  },
+  {
+    "pergunta": "Quais são os tipos de mananciais?",
+    "resposta": "Superficial e subterrâneo"
+  },
+  {
+    "pergunta": "Quais fontes são utilizadas na captação superficial?",
+    "resposta": "Rios, lagos, riachos e represas"
+  },
+  {
+    "pergunta": "No controle de vazão, quais dispositivos são utilizados para controlar a entrada de água?",
+    "resposta": "Registro, comporta e adufa"
+  },
+  {
+    "pergunta": "Qual o nome das canalizações utilizadas para conduzir água entre unidades que precedem a rede distribuidora?",
+    "resposta": "Adutora"
+  },
+  {
+    "pergunta": "Como são classificadas as adutoras quanto ao modo de escoamento do líquido?",
+    "resposta": "Livre, forçada e mista"
+  },
+  {
+    "pergunta": "Qual peça permite a expulsão do ar da canalização durante enchimento e operação normal diária da adutora?",
+    "resposta": "Ventosa"
+  },
+  {
+    "pergunta": "Nome da passagem de água por peneiras com malhas de pequenas aberturas, visando remoção do material particulado?",
+    "resposta": "Micropeneiramento"
+  },
+  {
+    "pergunta": "Qual o tempo de detenção em uma câmara de mistura lenta?",
+    "resposta": "20 a 40 minutos"
+  },
+  {
+    "pergunta": "Quais são os tipos de floculadores?",
+    "resposta": "Hidráulico, mecânico e misto"
+  },
+  {
+    "pergunta": "Quais são os dois tipos de reservatórios quanto a sua localização?",
+    "resposta": "De montante e de jusante"
+  },
+  {
+    "pergunta": "Sulfato de alumínio, cloreto férrico e sulfato férrico são exemplos de?",
+    "resposta": "Coagulantes"
+  },
+  {
+    "pergunta": "Qual o tipo de floculador provido de chicanas e a água efetua um movimento sinuoso?",
+    "resposta": "Floculador hidráulico"
+  },
+  {
+    "pergunta": "Qual o nome do processo que adiciona compostos contendo íon fluoreto na água?",
+    "resposta": "Fluoretação"
+  },
+  {
+    "pergunta": "Qual o nome do processo que a água passa por um leito contendo meio granular?",
+    "resposta": "Filtração"
+  },
+  {
+    "pergunta": "Qual o nome do processo que aumenta o tamanho das impurezas por meio da agitação da água?",
+    "resposta": "Floculação"
   }
   
 ]
