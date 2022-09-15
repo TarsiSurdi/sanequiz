@@ -6,7 +6,7 @@
   "orientation": "portrait",
   "icons": [
     {
-      "src": "/src/assets/icons/logo.png",
+      "src": "/logo.png",
       "sizes": "180x180",
       "type": "image/png",
       "purpose": "any maskable"
