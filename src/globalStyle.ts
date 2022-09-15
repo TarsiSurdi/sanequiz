@@ -1,7 +1,7 @@
 import { createGlobalStyle } from "styled-components";
 
 export const theme = {
-  headerTitle: "#ddd",
+  headerTitle: "white",
 };
 
 const GlobalStyle = createGlobalStyle`
@@ -27,7 +27,7 @@ const GlobalStyle = createGlobalStyle`
 
   div#root {
     height: 100%;
-    background-color: #333;
+    background-color: #e6f2fa;
   }
   div.App {
     display: flex;

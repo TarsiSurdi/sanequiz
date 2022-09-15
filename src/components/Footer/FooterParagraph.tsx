@@ -34,7 +34,7 @@ export default styled(Paragraph)`
 
   padding: 0.5em;
 
-  color: hotpink;
+  color: white;
   font-weight: bold;
   text-align: center;
   font-family: sans-serif;

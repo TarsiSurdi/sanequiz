@@ -20,5 +20,5 @@ export default styled(Footer)`
   width: 100%;
   min-height: fit-content;
 
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: #1a5d8a;
 `;
