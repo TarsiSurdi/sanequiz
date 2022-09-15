@@ -3,9 +3,9 @@ import { theme } from "../../globalStyle";
 
 export default styled.h1`
   margin: 0;
-  padding-top: 0.25em;
+  padding: 0.25em 0;
 
-  font-family: Bokor, cursive;
+  font-family: Orbitron, cursive;
   font-size: 32pt;
   text-transform: uppercase;
   letter-spacing: 4px;
