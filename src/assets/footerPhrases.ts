@@ -30,7 +30,7 @@ const phrases: Array<Phrase> = [
   },
   {
     icon: "🎓",
-    text: "Agradecimentos especiais à Karen Do Amaral",
+    text: "Agradecimentos especiais a Karen Do Amaral",
   },
 ];
 
