@@ -5,44 +5,32 @@ interface Phrase {
 
 const phrases: Array<Phrase> = [
   {
-    icon: "🍪",
-    text: "Esse site não utiliza cookies, aproveite!",
+    icon: "💻",
+    text: "Desenvolvido por Fernando Beulk",
   },
   {
-    icon: "❤️",
-    text: "Feito com amor por Tarcísio Surdi",
+    icon: "💻",
+    text: "Desenvolvido por Isadora Paggi",
+  },
+  {
+    icon: "💻",
+    text: "Desenvolvido por Tarcísio Surdi",
   },
   {
     icon: "🎓",
-    text: "Um trabalho proveniente da UNOESC",
+    text: "Revisão por Ana Luísa Vellozo",
   },
   {
     icon: "🔬",
-    text: "Agradecimentos especiais a Gustavo Hugen!",
+    text: "Revisão por Alexandre Andrade",
   },
   {
-    icon: "📝",
-    text: "Revisão por Maria Eduarda Marin",
+    icon: "🔬",
+    text: "Projeto de alunos UFPR",
   },
   {
-    icon: "📝",
-    text: "Revisão por Maria Santana",
-  },
-  {
-    icon: "📝",
-    text: "Revisão por Gabriele Mocelin",
-  },
-  {
-    icon: "📝",
-    text: "Revisão por Andrielly de Vargas",
-  },
-  {
-    icon: "📝",
-    text: "Revisão por Isadora Vanz Schwaiga",
-  },
-  {
-    icon: "🔓",
-    text: "Este é um projeto de código aberto!",
+    icon: "🎓",
+    text: "Agradecimentos especiais à Karen Do Amaral",
   },
 ];
 
