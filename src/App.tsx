@@ -1,3 +1,5 @@
+import icon from "./assets/icons/icon.svg";
+
 import Header from "./components/Header/Header";
 import HeaderTitle from "./components/Header/HeaderTitle";
 
@@ -12,7 +14,13 @@ function App() {
   return (
     <div className="App">
       <Header>
-        <HeaderTitle>SaneQuiz</HeaderTitle>
+        <HeaderTitle>
+          <img
+            src={icon}
+            style={{ height: "1.5em", marginRight: ".25em" }}
+          ></img>
+          SaneQuiz
+        </HeaderTitle>
         <HelpCircle
           color="White"
           size={24}
