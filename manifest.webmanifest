@@ -1,7 +1,7 @@
 {
   "$schema": "https://raw.githubusercontent.com/SchemaStore/schemastore/master/src/schemas/json/web-manifest.json",
   "background_color": "black",
-  "description": "Jogo sobre Patologia Geral baseado em flipcards",
+  "description": "Jogo sobre Saneamento Geral baseado em flipcards",
   "display": "standalone",
   "orientation": "portrait",
   "icons": [
@@ -41,6 +41,6 @@
       "type": "image/png"
     }
   ],
-  "name": "Patognomônico",
+  "name": "SaneQuiz",
   "start_url": "/index.html"
 }

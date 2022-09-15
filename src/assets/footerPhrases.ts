@@ -17,16 +17,16 @@ const phrases: Array<Phrase> = [
     text: "Desenvolvido por Tarcísio Surdi",
   },
   {
-    icon: "🎓",
+    icon: "📝",
     text: "Revisão por Ana Luísa Vellozo",
   },
   {
-    icon: "🔬",
+    icon: "📝",
     text: "Revisão por Alexandre Andrade",
   },
   {
     icon: "🔬",
-    text: "Projeto de alunos UFPR",
+    text: "Projeto realizado por alunos UFPR",
   },
   {
     icon: "🎓",
