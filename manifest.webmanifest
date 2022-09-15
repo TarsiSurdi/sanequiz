@@ -1,7 +1,7 @@
 {
   "$schema": "https://raw.githubusercontent.com/SchemaStore/schemastore/master/src/schemas/json/web-manifest.json",
   "background_color": "black",
-  "description": "Jogo sobre Saneamento Geral baseado em flipcards",
+  "description": "Jogo sobre Saneamento Ambiental baseado em flipcards",
   "display": "standalone",
   "orientation": "portrait",
   "icons": [
