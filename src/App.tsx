@@ -12,9 +12,9 @@ function App() {
   return (
     <div className="App">
       <Header>
-        <HeaderTitle>Patognomonico</HeaderTitle>
+        <HeaderTitle>SaneQuiz</HeaderTitle>
         <HelpCircle
-          color="gray"
+          color="White"
           size={24}
           style={{ position: "absolute", top: "5px", right: "5px" }}
           onClick={() => {
