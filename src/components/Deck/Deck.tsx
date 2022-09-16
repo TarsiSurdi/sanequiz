@@ -40,7 +40,7 @@ interface cardDataI {
 }
 
 const getRandomCard = (): cardDataI => {
-  return cardData[getRandomIntInclusive(0, cardData.length)];
+  return cardData[getRandomIntInclusive(0, cardData.length - 1)];
 };
 
 const Deck = () => {
